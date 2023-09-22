@@ -10,9 +10,9 @@ This project was created to learn basic notions about compilation of a C++ proje
 The project contains a source code that depends of two libraries. Every library will be compiled and after that the main program will be compiled in order to generate the executable file.
 
 # Requirements:
-1. [Visual Studio Code](https://code.visualstudio.com/download)
-2. [Bazel](https://bazel.build/install)
-3. [Bazel extension for VS Code](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Bazel](https://bazel.build/install)
+- [Bazel extension for VS Code](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel)
 
 For Windows users, the following directories should be added in PATH system variable:
 - C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC
