@@ -18,7 +18,7 @@ For Windows users, the following directories should be added in PATH system vari
 - C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC
 - C:\Program Files\Bazel
 
-<b>Remark</b>: These directories cover my case. They depends of Visuak Studio C++ Toolchain version and the path where Bazel was installed on computer.
+<b>Remark</b>: These directories cover my case. They depends of Visual Studio C++ Toolchain version and the path where Bazel was installed on computer.
 
 # Build
 To build locally this project, execute the following command in root folder
