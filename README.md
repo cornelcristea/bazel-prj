@@ -3,7 +3,7 @@
 1. [Requirements](#requirements)
 2. [Build](#build)
 3. [CI/CD](#cicd)
-4. [Dev Container](#devcontainer)
+4. [Docker Container](#docker-container)
 
 # Description:
 This project was created to learn basic notions about compilation of a C++ project with Bazel build tool.</br>
@@ -32,5 +32,5 @@ bazel run src:main
 # CI/CD
 TO BE DONE
 
-# Dev Container
+# Docker Container
 TO BE DONE
