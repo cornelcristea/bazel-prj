@@ -1,9 +1,9 @@
 # Table of Content:
-1. [Description](#description)
-1. [Requirements](#requirements)
-2. [Build](#build)
-3. [CI/CD](#cicd)
-4. [Docker Container](#docker-container)
+- [Description](#description)
+- [Requirements](#requirements)
+- [Build](#build)
+- [CI/CD](#cicd)
+- [Docker Container](#docker-container)
 
 # Description:
 This project was created to learn basic notions about compilation of a C++ project with Bazel build tool.</br>
@@ -23,14 +23,15 @@ For Windows users, the following directories should be added in PATH system vari
 # Build
 To build locally this project, execute the following command in root folder
 ```bash
-bazel build src:main --verbose_failures
+source build.sh
 ```
 To run the executable file, execute the following command in root folder
 ```bash
-bazel run src:main
+source run.sh
 ```
 # CI/CD
-TO BE DONE
+For each push on main branch a Runner will be automatically triggered in order to build the software.
+A second Runner can be manually triggered to be able to build and deploy a docker image which will contains this software.
 
 # Docker Container
 TO BE DONE
