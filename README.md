@@ -6,7 +6,7 @@
 - [Docker Container](#docker-container)
 
 ## Description:
-This project was created to learn basic notions about compilation of a C++ project with Bazel build tool.</br>
+This small project was created to learn basic notions about compilation of a C++ project with Bazel build tool.</br>
 The project contains a source code that depends of two libraries. Every library will be compiled and after that the main program will be compiled in order to generate the executable file.
 
 ## Requirements:
