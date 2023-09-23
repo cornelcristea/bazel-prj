@@ -1,0 +1,41 @@
+name: Build
+run-name: ${{ github.event.head_commit.message }}
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-20.04
+
+    env:
+      BUILD_DIR: "./build"
+    
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install Bazel
+        run: |
+          curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg
+          echo "deb [signed-by=bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+          sudo apt-get update && sudo apt-get install bazel
+          bazel version
+
+      - name: Build de software
+        run: |
+          if [ -d $BUILD_DIR ]; then
+            rm -r $BUILD_DIR 
+          fi
+          mkdir $BUILD_DIR 
+          bazel build src:main --verbose_failures
+          mv ./bazel* $BUILD_DIR
+
+      - name: Run the software
+        run: |
+          bazel run src:main
+          mv ./bazel* $BUILD_DIR
