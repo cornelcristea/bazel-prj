@@ -28,7 +28,7 @@ jobs:
           echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
           sudo apt update && sudo apt install bazel-${BAZEL_VER}
 
-      - name: Build de softwares
+      - name: Build the software
         run: |
           if [ -d $BUILD_DIR ]; then
             rm -r $BUILD_DIR 
