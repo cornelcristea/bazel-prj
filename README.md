@@ -33,7 +33,7 @@ source run.sh
 For each push on main branch a Runner will be automatically triggered in order to build the software.
 A second Runner can be manually triggered to be able to build and deploy a docker image which will contains this software.
 
-Pipelines link: 
+Pipelines link: https://github.com/cornelcristea/bazel-prj/actions
 
 ## Docker Container
 TO BE DONE
