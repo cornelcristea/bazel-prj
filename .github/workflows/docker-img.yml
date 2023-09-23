@@ -1,12 +1,7 @@
 name: Docker image
-run-name: ${{ github.event.head_commit.message }}
+run-name: Deploy the docker image
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-      branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   Build:
