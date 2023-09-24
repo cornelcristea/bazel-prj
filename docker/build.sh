@@ -8,4 +8,4 @@ cp -r $SRC_DIR .
 cp -r $LIB_DIR .
 cp -r $WS_FILE .
 
-docker build . -t bazel-prj
+docker build . -t bazel-app
