@@ -1,0 +1,11 @@
+.vscode
+.github
+.devcontainer
+build
+docker
+build.sh
+docker.sh
+LICENSE
+README.md
+run.sh
+Dockerfile

@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y apt-transport-https curl gnupg \
 
 # copy local files to target image
 RUN mkdir WORK_DIR
-COPY src && lib && WORKSPACE $WORK_DIR /
+COPY . $WORK_DIR
 
 # set project workdir
 WORKDIR $WORK_DIR

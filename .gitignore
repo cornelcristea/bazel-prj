@@ -1,6 +1,3 @@
 build
 bazel*
 .vscode
-# docker/lib
-# docker/src
-# docker/WORKSPACE
