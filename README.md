@@ -35,5 +35,7 @@ A second Runner can be manually triggered to be able to build and deploy a docke
 
 Pipelines link: https://github.com/cornelcristea/bazel-prj/actions
 
+IN PROGRESS
+
 ## Docker Container
 TO BE DONE
