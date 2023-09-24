@@ -7,5 +7,5 @@ if [ -d $BUILD_DIR ]; then
 fi
 
 mkdir $BUILD_DIR                            # create build folder 
-bazel build src:main --verbose_failures     # call bazel command
+bazel build src:app --verbose_failures      # call bazel command
 mv ./bazel* $BUILD_DIR                      # move outputs in build folder
