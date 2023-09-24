@@ -36,8 +36,3 @@ jobs:
           mkdir $BUILD_DIR 
           bazel build src:app --verbose_failures
           mv ./bazel* $BUILD_DIR
-
-      - name: Run the software
-        run: |
-          bazel run src:app
-          mv ./bazel* $BUILD_DIR
