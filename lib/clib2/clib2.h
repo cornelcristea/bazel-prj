@@ -5,7 +5,7 @@
     
     class CLib2 {
         public:
-            static void printWorld();
+            static void printBazelMessage();
     };
 
 #endif

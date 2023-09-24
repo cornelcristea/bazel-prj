@@ -5,7 +5,7 @@
     
     class CLib1{
         public:
-            static void printHello();
+            static void printHelloWorld();
     };
 
 #endif

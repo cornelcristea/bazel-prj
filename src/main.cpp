@@ -6,7 +6,7 @@ using namespace std;
 #include "lib/clib2/clib2.h"
 
 int main(){
-    CLib1::printHello();
-    CLib2::printWorld();
+    CLib1::printHelloWorld();
+    CLib2::printBazelMessage();
     return 0;
 }

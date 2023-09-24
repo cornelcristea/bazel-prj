@@ -4,6 +4,6 @@ using namespace std;
 #include "clib1.h"
 #include <iostream>
 
-void CLib1::printHello(){
-    cout << "Hello" << endl;
+void CLib1::printHelloWorld(){
+    cout << "Hello world" << endl;
 }
