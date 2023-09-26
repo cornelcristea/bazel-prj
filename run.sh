@@ -1,2 +1,3 @@
-bazel run src:app
-mv ./bazel* ./build
+#!/bin/bash
+
+./build/bazel-bin/src/app
