@@ -34,7 +34,7 @@ jobs:
 
       - name: Prepare the artifacts
           run: |
-            sudo cp $BUILD_DIR/bazel-bin/src/app $BUILD_DIR/bazel-bin/src/app.exe
+            cp $BUILD_DIR/bazel-bin/src/app $BUILD_DIR/bazel-bin/src/app.exe
 
       - name: Deploy the artifacts
         uses: actions/upload-artifact@v3
