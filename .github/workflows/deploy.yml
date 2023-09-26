@@ -33,8 +33,7 @@ jobs:
           mv ./bazel* $BUILD_DIR
 
       - name: Prepare the artifacts
-          run: |
-            echo $BUILD_DIR
+          run: echo $BUILD_DIR
 
 # cp $BUILD_DIR/bazel-bin/src/app $BUILD_DIR/bazel-bin/src/app.exe
 
