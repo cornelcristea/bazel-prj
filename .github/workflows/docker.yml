@@ -22,7 +22,7 @@ jobs:
         run: |
             docker build . -t bazel-app
 
-      - name: Push the image on Docker hub
+      - name: Push the image
         run: |
             docker tag $DOCKER_IMAGE ${{ secrets.DOCKER_USERNAME }}/$DOCKER_IMAGE
             docker push ${{ secrets.DOCKER_USERNAME }}/$DOCKER_IMAGE
