@@ -24,5 +24,5 @@ jobs:
 
       - name: Push the image on Docker hub
         run: |
-            docker tag $DOCKER_IMAGE:latest ${{ secrets.DOCKERHUB_USERNAME }}/$DOCKER_IMAGE
-            docker push ${{ secrets.DOCKERHUB_USERNAME }}/$DOCKER_IMAGE:latest
+            docker tag $DOCKER_IMAGE ${{ secrets.DOCKERHUB_USERNAME }}/$DOCKER_IMAGE
+            docker push ${{ secrets.DOCKERHUB_USERNAME }}/$DOCKER_IMAGE
