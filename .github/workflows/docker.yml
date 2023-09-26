@@ -12,6 +12,9 @@ jobs:
   Build:
     runs-on: ubuntu-20.04
 
+    env: 
+        DOCKER_IMAGE: "bazel-app"
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -26,4 +29,5 @@ jobs:
 
       - name: Push the image on Docker hub
         run: |
-            docker push bazel-app
+            docker tag $DOCKER_IMAGE:latest ${{ secrets.DOCKERHUB_USERNAME }}/ $DOCKER_IMAGE:latest
+            docker push ${{ secrets.DOCKERHUB_USERNAME }}/ $DOCKER_IMAGE:latest
