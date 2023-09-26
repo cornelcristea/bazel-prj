@@ -34,10 +34,14 @@ source scripts/run.sh
 The appilication will run constant. If you want to stop it, please press Ctrl + C in Terminal.
 
 ## CI/CD
-For each push on main branch a Runner will be automatically triggered in order to build the software.
-A second Runner can be manually triggered to deploy the executable file.
+Three Workflows are configured to do the following jobs:
+- <b>Build:</b> For each push on main branch it will be automatically triggered in order to build the software.
+- <b>Deploy:</b> This is manually triggered by the user in order to deploy the executable file.
+- <b>Docker:</b> This is manually triggered by the user in to build and push the docker image.
 
 Pipelines link: https://github.com/cornelcristea/bazel-prj/actions
+</br>
+Docker image link: https://hub.docker.com/r/cornelcristea/bazel-app
 
 ## Docker Image
 From root folder of repository, run the following command in terminal to build docker image
