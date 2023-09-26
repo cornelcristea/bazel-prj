@@ -1,0 +1,33 @@
+name: Docker
+run-name: Build docker image
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-20.04
+
+    env:
+      BUILD_DIR: "./build"
+      BAZEL_VER: "6.3.2"
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Login to Docker
+        run: |
+          docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build the image
+        run: |
+          docker build . -t bazel-app
+
+      - name: Push the image on Docker hub
+        run: |
+          docker push bazel-app
