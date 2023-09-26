@@ -33,9 +33,7 @@ jobs:
           mv ./bazel* $BUILD_DIR
 
       - name: Prepare the artifacts
-        run: echo $BUILD_DIR
-
-# cp $BUILD_DIR/bazel-bin/src/app $BUILD_DIR/bazel-bin/src/app.exe
+        run: cp $BUILD_DIR/bazel-bin/src/app $BUILD_DIR/bazel-bin/src/app.exe
 
       - name: Deploy the artifacts
         uses: actions/upload-artifact@v3
