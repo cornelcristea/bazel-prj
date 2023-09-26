@@ -34,7 +34,7 @@ jobs:
 
       - name: Prepare the artifacts
           run: |
-            cp ${{ env.BUILD_DIR }}/bazel-bin/src/app ${{ env.BUILD_DIR }}/bazel-bin/src/app.exe
+          cp ./build/bazel-bin/src/app ./build/bazel-bin/src/app.exe
 
       - name: Deploy the artifacts
         uses: actions/upload-artifact@v3
