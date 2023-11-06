@@ -25,11 +25,11 @@ For Windows users, the following directories should be added in PATH system vari
 ## Build
 To build locally this project, execute the following command in root folder
 ```bash
-source scripts/build.sh
+source build.sh
 ```
 To run the executable file, execute the following command in root folder
 ```bash
-source scripts/run.sh
+source run.sh
 ```
 The appilication will run constant. If you want to stop it, please press Ctrl + C in Terminal.
 
